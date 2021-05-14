@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Health Remainder</string>
+    <string name="datepicker">datePicker</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_toast">Time</string>
+    <string name="timepicker">timePicker</string>
+    <array name="Departments">
+        <item>Aesthetic, Plastic and Reconstructive Surgery</item>
+        <item>Allergic Diseases</item>
+        <item>Bacteriology and Microbiology</item>
+        <item>Brain Health Protection Program</item>
+        <item>Cardiology</item>
+        <item>Coronary Intensive Care Unit</item>
+        <item>Dermatology (Skin and Venereal Diseases)</item>
+        <item>Diet and Nutrition</item>
+        <item>Ear, Nose and Throat Disorders</item>
+        <item>Endocrinology, Diabetes and Metabolic Diseases</item>
+        <item>Eye Center</item>
+        <item>Gastroenterology / Hepatology</item>
+        <item>General Surgery</item>
+        <item>Hematology / Blood Diseases</item>
+        <item>Infections Diseases</item>
+        <item>Internal Medicine</item>
+        <item>Medical Oncology</item>
+        <item>Nephrology</item>
+        <item>Neurology</item>
+        <item>Oncology Center</item>
+        <item>Oral and Dental Diseases</item>
+        <item>Orthopedics and Traumatology</item>
+        <item>Pedagogy</item>
+        <item>Pediatrics</item>
+        <item>Physiotherapy and Rehabilitation</item>
+        <item>Psychiatry</item>
+        <item>Psychology</item>
+        <item>Radiology</item>
+        <item>Urology</item>
+        <item>Women Health</item>
+    </array>
+
+    <array name="Stomach">
+        <item>on an empty stomach</item>
+        <item>on a full stomach</item>
+    </array>
+
+</resources>

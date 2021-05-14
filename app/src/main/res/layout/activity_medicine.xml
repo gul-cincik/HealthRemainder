@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2C0F6"
+    tools:context=".Medicine">
+
+    <EditText
+        android:id="@+id/medicine_name_text"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Enter The Name of The Medicine"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_medicine" />
+
+    <EditText
+        android:id="@+id/day_rep_medicine"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="How Many Times a Day?"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/medicine_name_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/medicine_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_name_text" />
+
+    <EditText
+        android:id="@+id/medicine_day"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="How Many Days Usage?"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/day_rep_medicine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/day_rep_medicine"
+        app:layout_constraintTop_toBottomOf="@+id/day_rep_medicine" />
+
+    <Spinner
+        android:id="@+id/spinner_stomach"
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Stomach"
+        app:layout_constraintEnd_toEndOf="@+id/medicine_day"
+        app:layout_constraintStart_toStartOf="@+id/medicine_day"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_day" />
+
+    <Button
+        android:id="@+id/button_medicine_time"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:onClick="showTimePicker"
+        android:text="pıck the time"
+        android:textColor="#60296A"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_stomach"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner_stomach"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_stomach" />
+
+    <Button
+        android:id="@+id/medicine_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:background="#FFFFFF"
+        android:text="save"
+        android:textColor="#60296A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_medicine"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textview_time_medicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/button_medicine_time"
+        app:layout_constraintStart_toEndOf="@+id/button_medicine_time"
+        app:layout_constraintTop_toTopOf="@+id/button_medicine_time" />
+
+    <Switch
+        android:id="@+id/alarm_medicine"
+        android:layout_width="140dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="Notifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_medicine_time" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_medicine"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
